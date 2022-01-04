@@ -1,0 +1,39 @@
+.features {
+    background-color: #222224;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        max-width: 360px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 103px 0;
+    }
+
+    &__img {
+        margin-bottom: 28px;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+        color: #FBFBFB;
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 17px;
+        text-align: center;
+        color: $gray-text;
+    }
+}
