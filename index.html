@@ -22,7 +22,7 @@
                 </div>
             </div>
             <div>
-                <button class="header__menu-btn"><img src="./img/burger_logo.svg" alt="burger"></button>
+                <button type="button" class="header__menu-btn"><img src="./img/burger_logo.svg" alt="burger"></button>
                 <a class="header__link" href="#"><img src="./img/person_logo.svg" alt="person"></a>
                 <a class="header__link" href="#"><img src="./img/basket_logo.svg" alt="basket"></a>    
             </div>
@@ -66,6 +66,7 @@
 
     <main>
         <section class="brand">
+            <h2 class="visually-hidden">Brand</h2>
             <img class="brand__img" src="./img/some_man.png" alt="man" width="800px" height="765">
             <div class="brand__title-wrp">
                 <h1 class="brand__title">the brand <span class="brand__subtitle">of luxerious <span class="brand__subtitle-pink">fashion</span></span></h1>
@@ -97,16 +98,10 @@
             <p class="products__subtitle">Shop for items based on what we featured in this week</p>
             <ul class="products__list">
                 <li class="products__item">
-                    <img class="products__item-img" src="./img/product-1.jpeg" alt="product-1">
-                    <div class="produts__description">
-                        <h3 class="products__item-title">ellery x m'o capsule</h3>
-                        <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="products__item-price">$52.00</p>
+                    <div class="products__item-overlay">
+                        <img class="products__item-img" src="./img/product-1.jpeg" alt="product-1">
+                        <button type="button" class="products__item-btn">Add to Cart</button>
                     </div>
-
-                </li>
-                <li class="products__item">
-                    <img class="products__item-img" src="./img/product-2.jpeg" alt="product-2">
                     <div class="produts__description">
                         <h3 class="products__item-title">ellery x m'o capsule</h3>
                         <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -114,7 +109,10 @@
                     </div>
                 </li>
                 <li class="products__item">
-                    <img class="products__item-img" src="./img/product-3.jpeg" alt="product-3">
+                    <div class="products__item-overlay">
+                        <img class="products__item-img" src="./img/product-2.jpeg" alt="product-2">
+                        <button type="button" class="products__item-btn">Add to Cart</button>
+                    </div>
                     <div class="produts__description">
                         <h3 class="products__item-title">ellery x m'o capsule</h3>
                         <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -122,7 +120,10 @@
                     </div>
                 </li>
                 <li class="products__item">
-                    <img class="products__item-img" src="./img/product-4.jpeg" alt="product-4">
+                    <div class="products__item-overlay">
+                        <img class="products__item-img" src="./img/product-3.jpeg" alt="product-3">
+                        <button type="button" class="products__item-btn">Add to Cart</button>
+                    </div>
                     <div class="produts__description">
                         <h3 class="products__item-title">ellery x m'o capsule</h3>
                         <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -130,7 +131,10 @@
                     </div>
                 </li>
                 <li class="products__item">
-                    <img class="products__item-img" src="./img/product-5.jpeg" alt="product-5">
+                    <div class="products__item-overlay">
+                        <img class="products__item-img" src="./img/product-4.jpeg" alt="product-4">
+                        <button type="button" class="products__item-btn">Add to Cart</button>
+                    </div>
                     <div class="produts__description">
                         <h3 class="products__item-title">ellery x m'o capsule</h3>
                         <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -138,7 +142,21 @@
                     </div>
                 </li>
                 <li class="products__item">
-                    <img class="products__item-img" src="./img/product-6.jpeg" alt="product-6">
+                    <div class="products__item-overlay">
+                        <img class="products__item-img" src="./img/product-5.jpeg" alt="product-5">
+                        <button type="button" class="products__item-btn">Add to Cart</button>
+                    </div>
+                    <div class="produts__description">
+                        <h3 class="products__item-title">ellery x m'o capsule</h3>
+                        <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="products__item-price">$52.00</p>
+                    </div>
+                </li>
+                <li class="products__item">
+                    <div class="products__item-overlay">
+                        <img class="products__item-img" src="./img/product-6.jpeg" alt="product-6">
+                        <button type="button" class="products__item-btn">Add to Cart</button>
+                    </div>
                     <div class="produts__description">
                         <h3 class="products__item-title">ellery x m'o capsule</h3>
                         <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -149,7 +167,6 @@
             <div class="products__btn">
                 <a class="products__link" href="#">Browse All Product</a>
             </div>
-
         </section>
         <section class="features">
             <h2 class="visually-hidden">Features</h2>
@@ -174,44 +191,69 @@
     </main>
 
     <footer>
-        <div class="footer__top">
-            <div class="footer__top-wrap container">
+        <div class="footer__review-form">
+            <div class="footer__review-form-wrap container">
                 <div class="footer__review">
-                    <img src="./img/some-woman.png" alt="woman">
-                    <p class="footer__review-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+                    <img class="footer__review-img" src="./img/some-woman.png" alt="woman">
+                    <p class="footer__review-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span class="footer__review-text--italic">a pulvinar purus condimentum</span>“</p>
                 </div>
                 <div class="footer__form">
-                    <h2>subscribe for our newletter and promotion</h2>
-                    <form action="">
-                        <input type="e-mail" placeholder="Enter Your Email">
-                        <button>Subscribe</button>
+                    <h2 class="footer__form-title"><span class="footer__form-title--bold">subscribe</span>for our newletter and promotion</h2>
+                    <form class="footer__form-wrp" action="#">
+                        <label>
+                            <input class="footer__form-input" type="e-mail" placeholder="Enter Your Email">
+                            <span class="visually-hidden">Enter Your Email</span>
+                        </label>
+                        <button type="submit" class="footer__form-btn">Subscribe</button>
                     </form>
                 </div>
             </div>
         </div>
 
-        <div class="footer__bottom">
-            <div class="footer__bottom-wrap container">
-                <h4 class="footer__copy-text">© 2021  Brand  All Rights Reserved.</h4>
+        <div class="footer__copy-social">
+            <div class="footer__copy-social-wrap container">
+                <h2 class="footer__copy-text">© 2021  Brand  All Rights Reserved.</h2>
                 <ul class="social__list">
                     <li class="social__link">
-                        <a href="#"><img src="./img/fb-logo.svg" alt="facebook"></a>
+                        <div class="social__link-wrp">
+                            <a href="#">
+                                <svg class="social__link-svg" width="9" height="15" viewBox="0 0 9 15" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.08836 8.28L8.50686 5.61602H5.89022V3.88729C5.89022 3.15847 6.25574 2.44806 7.42765 2.44806H8.61722V0.179975C8.61722 0.179975 7.53772 0 6.50561 0C4.35073 0 2.9422 1.27593 2.9422 3.5857V5.61602H0.546875V8.28H2.9422V14.72H5.89022V8.28H8.08836Z"/>
+                                </svg>
+                            </a>
+                        </div>
                     </li>
                     <li class="social__link">
-                        <a href="#"><img src="./img/inst-logo.svg" alt="instagram"></a>
+                        <div class="social__link-wrp">
+                            <a href="#">
+                                <svg class="social__link-svg" width="16" height="15" viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.13897 3.68159C6.02383 3.68159 4.31774 5.38491 4.31774 7.49663C4.31774 9.60835 6.02383 11.3117 8.13897 11.3117C10.2541 11.3117 11.9602 9.60835 11.9602 7.49663C11.9602 5.38491 10.2541 3.68159 8.13897 3.68159ZM8.13897 9.9769C6.77211 9.9769 5.65467 8.8646 5.65467 7.49663C5.65467 6.12866 6.76878 5.01636 8.13897 5.01636C9.50915 5.01636 10.6233 6.12866 10.6233 7.49663C10.6233 8.8646 9.50583 9.9769 8.13897 9.9769ZM13.0078 3.52554C13.0078 4.02026 12.6087 4.41538 12.1165 4.41538C11.621 4.41538 11.2252 4.01694 11.2252 3.52554C11.2252 3.03413 11.6243 2.63569 12.1165 2.63569C12.6087 2.63569 13.0078 3.03413 13.0078 3.52554ZM15.5386 4.42866C15.4821 3.23667 15.2094 2.18081 14.3347 1.31089C13.4634 0.440967 12.4058 0.168701 11.2119 0.108936C9.9814 0.039209 6.29321 0.039209 5.0627 0.108936C3.8721 0.165381 2.81453 0.437646 1.93987 1.30757C1.06522 2.17749 0.795836 3.23335 0.735973 4.42534C0.666134 5.65386 0.666134 9.33608 0.735973 10.5646C0.79251 11.7566 1.06522 12.8124 1.93987 13.6824C2.81453 14.5523 3.86878 14.8246 5.0627 14.8843C6.29321 14.9541 9.9814 14.9541 11.2119 14.8843C12.4058 14.8279 13.4634 14.5556 14.3347 13.6824C15.2061 12.8124 15.4788 11.7566 15.5386 10.5646C15.6085 9.33608 15.6085 5.65718 15.5386 4.42866ZM13.949 11.8828C13.6895 12.5335 13.1874 13.0349 12.5322 13.2972C11.5511 13.6857 9.22314 13.596 8.13897 13.596C7.05479 13.596 4.72348 13.6824 3.74573 13.2972C3.09389 13.0382 2.59171 12.5369 2.32898 11.8828C1.93987 10.9033 2.02967 8.57905 2.02967 7.49663C2.02967 6.41421 1.9432 4.08667 2.32898 3.1105C2.58838 2.45972 3.09056 1.95835 3.74573 1.69604C4.7268 1.30757 7.05479 1.39722 8.13897 1.39722C9.22314 1.39722 11.5545 1.31089 12.5322 1.69604C13.184 1.95503 13.6862 2.4564 13.949 3.1105C14.3381 4.08999 14.2483 6.41421 14.2483 7.49663C14.2483 8.57905 14.3381 10.9066 13.949 11.8828Z"/>
+                                </svg>
+                            </a>
+                        </div>
                     </li>
                     <li class="social__link">
-                        <a href="#"><img src="./img/pinterest-logo.svg" alt="pinterest"></a>
+                        <div class="social__link-wrp">
+                            <a href="#">
+                                <svg class="social__link-svg" width="13" height="16" viewBox="0 0 13 16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.7402 0.203125C3.55552 0.203125 0.408081 2.34063 0.408081 5.8C0.408081 8 1.63726 9.25 2.38221 9.25C2.68951 9.25 2.86643 8.3875 2.86643 8.14375C2.86643 7.85313 2.13079 7.23438 2.13079 6.025C2.13079 3.5125 4.03043 1.73125 6.48878 1.73125C8.60259 1.73125 10.167 2.94062 10.167 5.1625C10.167 6.82187 9.50585 9.93437 7.3641 9.93437C6.59121 9.93437 5.93006 9.37187 5.93006 8.56563C5.93006 7.38438 6.74951 6.24062 6.74951 5.02187C6.74951 2.95312 3.83487 3.32812 3.83487 5.82812C3.83487 6.35313 3.90006 6.93437 4.13286 7.4125C3.70451 9.26875 2.82919 12.0344 2.82919 13.9469C2.82919 14.5375 2.91299 15.1188 2.96886 15.7094C3.0744 15.8281 3.02163 15.8156 3.18304 15.7563C4.74744 13.6 4.69157 13.1781 5.39928 10.3562C5.78107 11.0875 6.76814 11.4812 7.55034 11.4812C10.8468 11.4812 12.3274 8.24688 12.3274 5.33125C12.3274 2.22813 9.66415 0.203125 6.7402 0.203125Z"/>
+                                </svg>
+                            </a>
+                        </div>
                     </li>
                     <li class="social__link">
-                        <a href="#"><img src="./img/twitter-logo.svg" alt="tweetter"></a>
+                        <div class="social__link-wrp">
+                            <a href="#">
+                                <svg class="social__link-svg" width="17" height="14" viewBox="0 0 17 14" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.4181 3.74107C14.4281 3.88319 14.4281 4.02535 14.4281 4.16747C14.4281 8.50247 11.1509 13.4974 5.16096 13.4974C3.31558 13.4974 1.60132 12.9593 0.159302 12.0253C0.421495 12.0558 0.673569 12.0659 0.94585 12.0659C2.46851 12.0659 3.8702 11.5482 4.98953 10.6649C3.5576 10.6345 2.3576 9.69032 1.94415 8.39081C2.14585 8.42125 2.34751 8.44156 2.5593 8.44156C2.85172 8.44156 3.14418 8.40094 3.41643 8.32991C1.92401 8.02531 0.80465 6.70553 0.80465 5.11163V5.07103C1.23825 5.31469 1.74249 5.46697 2.2769 5.48725C1.39959 4.89841 0.824826 3.89335 0.824826 2.75628C0.824826 2.14716 0.98614 1.58878 1.26851 1.10147C2.87187 3.09131 5.28195 4.39078 7.98443 4.53294C7.93403 4.28928 7.90376 4.0355 7.90376 3.78169C7.90376 1.97457 9.35586 0.502502 11.1609 0.502502C12.0987 0.502502 12.9457 0.89844 13.5407 1.53803C14.2768 1.39591 14.9827 1.12178 15.6079 0.746159C15.3659 1.5076 14.8516 2.14719 14.176 2.55325C14.8315 2.48222 15.4668 2.29944 16.0516 2.04566C15.608 2.69538 15.0533 3.27403 14.4181 3.74107Z"/>
+                                </svg>
+                            </a>
+                        </div>
                     </li>
                 </ul>
             </div>
 
         </div>
-
-
     </footer>
 </body>
 </html>
