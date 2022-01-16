@@ -5,8 +5,7 @@
 }
 
 .header__wrp {
-    display: flex;
-    justify-content: space-between;
+    @include flex-between;
     align-items: center;
 }
 
@@ -104,6 +103,7 @@
 .header__burger-btn:hover +.header__nav,
 .header__burger-btn:focus +.header__nav {
     display: block;
+    z-index: 5;
 }
 
 .header__nav:hover {
@@ -148,3 +148,19 @@
 .nav-sub-item__link:active {
     color: #E29595;
 } 
+
+@media (max-width: $tablet-width) {
+    .header__logo-form-wrp {
+        margin: 0 0 0 16px;
+    }
+
+    .header__burger-basket-wrp {
+        margin: 0 16px 0 0;
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .header__link {
+        display: none;
+    }
+}

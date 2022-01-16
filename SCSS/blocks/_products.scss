@@ -10,39 +10,71 @@
     font-weight: 400;
     text-align: center;
     color: $gray-text;
+    margin-bottom: 48px;
+
+    @include tablet {
+        margin-bottom: 72px;
+    }
+
+    @include mobile {
+        margin-bottom: 64px;
+    }
 }
 
 .products__list {
-
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 63px;
+    @include flex-between;
+    margin-bottom: 18px; //в макете 48, но 30 дает карточка
+
+    @include tablet {
+        margin-bottom: 2px;
+    }
+
+    @include mobile {
+        margin-bottom: 11px;
+        flex-direction: column;
+    }
 }
 
 .products__item {
-    width: 360px;
+    width: 31%;
     height: 581px;
-    margin-top: 30px;
+    margin-bottom: 30px;
     background-color: $gray-bgc;
+
+    @include tablet {
+        width: 49%;
+        margin-bottom: 16px;
+    }
+
+    @include mobile {
+        width: 100%;
+    }
 }
 
 .products__item-overlay {
     position: relative;
+    height: 420px;
+}
+
+.products__item-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
 }
 
 .products__item-overlay:before {
     content: '';
     top: 0;
-    /* width: 100%;
-    min-height: 150px; */
     background: rgba(58, 56, 56, 0.86);
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    display: none;
+    opacity: 0;
+    transition: 0.8s;
 }
 
 .products__item-btn {
@@ -71,7 +103,10 @@
 .products__item:hover .products__item-overlay:before,
 .products__item:hover .products__item-btn {
     display: block;
+    opacity: 1;
+    transition: 0.8s;
 }
+
 
 .products__item-btn:hover, .products__item-btn:focus {
     background-color: #E05C6E;
@@ -123,6 +158,7 @@
 .products__link:hover, .products__link:focus {
     background-color: $pink-price;
     color: #FFFFFF;
+    transition: 0.8s;
 }
 
 .products__link:active {
