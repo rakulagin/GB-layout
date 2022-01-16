@@ -1,0 +1,150 @@
+.header {
+    background-color: $black;
+    min-height: 75px;
+    position: relative;
+}
+
+.header__wrp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo-form-wrp {
+    display: flex;
+    padding: 18px 0;
+    align-items: end;
+}
+
+.header__search {
+    margin-left: 41px;
+    display: flex;
+}
+
+.header__burger-btn {
+    border: none;
+    background: $black;
+}
+
+.header__burger-logo {
+    fill: #E8E8E8;
+}
+
+.header__burger-btn:hover .header__burger-logo, 
+.header__burger-btn:focus .header__burger-logo {
+    fill: $pink-price;
+}
+
+.header__burger-btn:active .header__burger-logo {
+    fill: #E29595;
+}
+
+.header__link {
+    margin-left: 33px;
+    text-decoration: none;
+}
+
+.header__link-logo {
+    fill: #E8E8E8;
+}
+
+.header__link:hover .header__link-logo, 
+.header__link:focus .header__link-logo {
+    fill: $pink-price;
+}
+
+.header__link:active .header__link-logo {
+    fill: #E29595;
+}
+
+.header__search-btn {
+    border: none;
+    background: $black;
+}
+
+.header__search-logo {
+    fill: #E8E8E8;
+}
+
+.header__search-btn:hover .header__search-logo, 
+.header__search-btn:focus .header__search-logo {
+    fill: $pink-price;
+}
+
+.header__search-btn:active .header__search-logo {
+    fill: #E29595;
+}
+
+.header__search-input {
+    padding-left: 10px;
+    border-radius: 25px;
+    display: none;
+}
+
+.header__search-btn:focus +.header__search-input {
+    display: block;
+}
+
+.header__search-input:focus,
+.header__search-input:hover {
+    display: block;
+    background-color: darkgray;
+}
+
+.header__nav {
+    position: absolute;
+    right: 0;
+    width: 323px;
+    height: 764px;
+    background: white;
+    padding: 37px 0 0 34px;
+    display: none;
+}
+
+.header__burger-btn:hover +.header__nav,
+.header__burger-btn:focus +.header__nav {
+    display: block;
+}
+
+.header__nav:hover {
+    display: block;
+}
+
+.header__nav-tittle {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.header__nav-item {
+    margin-bottom: 20px;
+}
+
+.nav-sub-item__title-link {
+    color: $pink-price;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav-sub-item__list {
+    margin-top: 20px;
+}
+
+.nav-sub-item {
+    margin-bottom: 11px;
+}
+
+.nav-sub-item__link {
+    text-decoration: none;
+    padding-left: 20px;
+    color: #6F6E6E;
+    margin-bottom: 30px;
+}
+
+.nav-sub-item__link:hover, .nav-sub-item__link:focus {
+    color: $pink-price;
+}
+
+.nav-sub-item__link:active {
+    color: #E29595;
+} 

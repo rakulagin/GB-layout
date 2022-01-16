@@ -1,0 +1,32 @@
+.brand {
+    display: flex;
+    background-color: $pink-bgc;
+    margin-bottom: 63px;
+
+    &__title-wrp {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        padding-left: 92px;
+    }
+
+    &__title {
+        font-size: 48px;
+        font-weight: 900;
+        line-height: 58px;
+        text-transform: uppercase;
+        }
+
+    &__subtitle {
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 38px;
+        display: block;
+    }
+
+    &__subtitle-pink {
+        color: $pink-color;
+    }
+
+}

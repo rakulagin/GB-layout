@@ -1,0 +1,137 @@
+.registration-top {
+    min-height: 148px;
+    background-color: #F8F3F4;
+}
+
+.registrarion-header {
+    height: 148px;
+    display: flex;
+    align-items: center;
+}
+
+.registration__title {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    color: var(--pink-price);
+}
+
+.registration__data {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+    margin-bottom: 96px;
+}
+
+.registration__form {
+    max-width: 360px;
+}
+
+.registration__legend {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+}
+
+.registration__input {
+    display: block;
+    margin-top: 20px;
+    padding-left: 17px;
+    width: 360px;
+    height: 45px;
+    border: 1px solid #A4A4A4
+}
+
+.registration__input:hover, .registration__input:focus {
+    background-color: darkgray;
+}
+
+.registration__gender {
+    margin: 33px 0;
+}
+
+.registration__radio {
+    margin-left: 0;
+    
+}
+
+.registration__radio-text {
+    margin-right: 20px;
+}
+
+.registration__form-hint {
+    margin-top: 16px;
+    margin-bottom: 39px;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    color: #B1B1B1;
+}
+
+.registration__form-btn {
+    position: relative;
+    text-transform: uppercase;
+    padding: 16px 66px 16px 29px;
+    background-color: var(--pink-price);
+    border: none;
+    color: #FFFFFF;
+}
+
+.registration__form-btn:after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 10px;
+    background-image: url(../img/registration-btn-arrow.svg);
+    background-repeat: no-repeat;
+    right: 29px;
+    top: 18px;
+}
+
+.registration__form-btn:hover, .registration__form-btn:focus {
+    background-color: #E05C6E;
+    color: #FFFFFF;
+}
+
+.registration__form-btn:active {
+    background-color: #E29595;
+} 
+
+.registration__offer {
+    max-width: 652px;
+}
+
+.registration__offer-title {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    margin-bottom: 22px;
+}
+
+.registration__offer-text {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    margin-bottom: 21px;
+}
+
+.registration__offer-item {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    margin-bottom: 16px;
+    padding-left: 43px;
+    position: relative;
+}
+
+.registration__offer-item::before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 16px;
+    background-image: url(../img/registration-mark.svg);
+    left: 0;
+    top: 8px;
+}
