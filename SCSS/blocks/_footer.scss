@@ -1,14 +1,15 @@
 .footer__review-form {
-    min-height: 448px;
     background-image: url(../img/footer_img.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    background-size: cover;
 
     &-wrap {
-        height: 448px;
-        display: flex;
-        justify-content: space-between;
+        min-height: 448px;
+        @include flex-between;
         align-items: center;
+
+        @include tablet {
+            flex-direction: column;
+        }
     }
 }
 
@@ -17,6 +18,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include tablet {
+        margin: 64px 0 48px 0;
+    }
+
+    @include mobile {
+        margin-bottom: 59px;
+    }
 
     &-img {
         margin-bottom: 30px;
@@ -52,21 +61,38 @@
 
     &-title {
         margin-bottom: 32px;
-        font-family: Lato;
         text-transform: uppercase;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 40px;
-        letter-spacing: 0em;
+        @include font (18px, 30px, 400);
         text-align: center;
 
-        &--bold {
-            font-size: 24px;
-            font-weight: 700;
-            line-height: 40px;
+        @include tablet {
+            @include font (18px, 29px, 400);
+            margin-bottom: 27px;
+        }
+        @include mobile {
+            @include font(14px, 21px, 400);
+            margin-bottom: 22px;
+        }
+
+        &--bold {  //subscribe
+            @include font (24px, 37px, 700);
             text-align: center;
             display: block;
+            @include tablet {
+                @include font(18px, 27px, 700);
+            }
+            @include mobile {
+                @include font(24px, 36px, 700);
+            }
         }
+    }
+
+    @include tablet {
+        margin-bottom: 140px;
+    }
+
+    @include mobile {
+        margin-bottom: 109px;
     }
 }
 
@@ -81,6 +107,7 @@
 
 .footer__form-input:hover, .footer__form-input:focus {
     background-color: darkgray;
+    transition: 0.8s;
 }
 
 .footer__form-btn {
@@ -90,14 +117,19 @@
     color: #FFFFFF;
     background-color: #F16D7F;
     width: 100px;
-    height: 50px;
+    height: 52px;
     border: none;
     border-radius: 0 25px 25px 0;
+
+    @include mobile {
+        width: 91%;
+    }
 }
 
 .footer__form-btn:hover, .footer__form-btn:focus {
     background-color: #E05C6E;
     color: #FFFFFF;
+    transition: 0.5s;
 }
 
 .footer__form-btn:active {
@@ -108,12 +140,19 @@
 
 .footer__copy-social {
     background-color: #222224;
-    height: 79px;
+    min-height: 79px;
 
     &-wrap {
-        display: flex;
-        justify-content: space-between;
+        @include flex-between;
         align-items: center;
+
+        @include tablet {
+            width: 91%;
+        }
+
+        @include mobile {
+            flex-direction: column-reverse;
+        }
     }
 }
 
@@ -123,10 +162,18 @@
     line-height: 19px;
     color: #FBFBFB;
     padding: 30px 0;
+
+    @include mobile {
+        padding: 49px 0 9px 0;
+    }
 }
 
 .social__list {
     display: flex;
+
+    @include mobile {
+        margin-top: 43px;
+    }
 }
 
 .social__item {
@@ -143,6 +190,7 @@
 
 .social__icon:hover {
     fill: $pink-price;
+    transition: 0.8s;
 }
 
 .social__icon:hover .social__logo {

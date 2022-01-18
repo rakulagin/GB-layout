@@ -14,38 +14,34 @@
     font-size: 24px;
     font-weight: 400;
     line-height: 29px;
-    color: var(--pink-price);
+    color: $pink-price;
 }
 
 .registration__data {
-    display: flex;
-    justify-content: space-between;
+    @include flex-between;
     margin-top: 64px;
     margin-bottom: 96px;
+
+    @include mobile {
+        flex-direction: column;
+        margin-top: 40px;
+        margin-bottom: 100px;
+    }
 }
 
 .registration__form {
-    max-width: 360px;
+    width: 31%;
+
+    @include tablet {
+        width: 49%;
+    }
+
+    @include mobile {
+        width: 95%;
+    }
 }
 
-.registration__legend {
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 19px;
-}
 
-.registration__input {
-    display: block;
-    margin-top: 20px;
-    padding-left: 17px;
-    width: 360px;
-    height: 45px;
-    border: 1px solid #A4A4A4
-}
-
-.registration__input:hover, .registration__input:focus {
-    background-color: darkgray;
-}
 
 .registration__gender {
     margin: 33px 0;
@@ -53,11 +49,19 @@
 
 .registration__radio {
     margin-left: 0;
-    
+
 }
 
 .registration__radio-text {
     margin-right: 20px;
+}
+
+.registration__radio--easter-egg, .registration__radio-text--easter-egg {
+    display: none;
+
+    @include tablet {
+        display: inline;
+    }
 }
 
 .registration__form-hint {
@@ -73,7 +77,7 @@
     position: relative;
     text-transform: uppercase;
     padding: 16px 66px 16px 29px;
-    background-color: var(--pink-price);
+    background-color: $pink-price;
     border: none;
     color: #FFFFFF;
 }
@@ -89,41 +93,61 @@
     top: 18px;
 }
 
-.registration__form-btn:hover, .registration__form-btn:focus {
+.registration__form-btn:hover,
+.registration__form-btn:focus {
     background-color: #E05C6E;
     color: #FFFFFF;
+    transition: 0.8s;
 }
 
 .registration__form-btn:active {
     background-color: #E29595;
-} 
+}
 
 .registration__offer {
-    max-width: 652px;
+    width: 57%;
+
+    @include tablet {
+        width: 48%;
+    }
+
+    @include mobile {
+        width: 91%;
+        margin-top: 40px;
+    }
 }
 
 .registration__offer-title {
+    @include font(24px, 28px, 300);
     text-transform: uppercase;
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 29px;
     margin-bottom: 22px;
+
+    @include tablet {
+        @include font(16px, 19px, 300);
+    }
+    @include mobile {
+        margin-bottom: 32px;
+    }
 }
 
 .registration__offer-text {
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 29px;
+    @include font (24px, 28px, 300);
     margin-bottom: 21px;
+
+    @include tablet {
+        @include font(16px, 19px, 300);
+    }
 }
 
 .registration__offer-item {
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 29px;
+    @include font (24px, 28px, 300);
     margin-bottom: 16px;
     padding-left: 43px;
     position: relative;
+
+    @include tablet {
+        @include font(16px, 19px, 300);
+    }
 }
 
 .registration__offer-item::before {
