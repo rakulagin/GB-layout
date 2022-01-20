@@ -1,0 +1,28 @@
+.carousel-bootstrap {
+    background-color: #F7F7F7;
+}
+
+.carousel-item img {
+    height: 724px;
+    object-fit: contain;
+    padding: 11px 0 24px 0;
+}
+
+.carousel-control-next {
+    justify-content: flex-end;
+}
+
+.carousel-control__logo {
+    fill: #000000;
+}
+
+
+.carousel-control-next:hover {
+    fill: $pink-price;
+    transition: 0.8s;
+}
+
+.carousel-control-prev:hover {
+    fill: $pink-price;
+    transition: 0.8s;
+}
