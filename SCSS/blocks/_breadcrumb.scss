@@ -1,0 +1,14 @@
+.breadcrumb-item {
+    text-transform: uppercase;
+    @include font(14px, 17px, 300);
+}
+
+.breadcrumb-item--active {
+    @include font(14px, 17px, 700);
+    color: $pink-price;
+}
+
+.breadcrumb-item__link {
+    text-decoration: none;
+    color: #636363;
+}

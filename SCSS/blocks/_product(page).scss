@@ -1,0 +1,117 @@
+.product-top {
+    min-height: 148px;
+    background-color: #F8F3F4;
+}
+
+.product-header {
+    height: 148px;
+    @include flex-between;
+    align-items: center;
+}
+
+.product__title {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    color: $pink-price;
+}
+
+.product__discription {
+    margin-top: -65px;
+    margin-bottom: 129px;
+    border: 1px solid #EAEAEA;
+    background-color: #fff;
+    position: relative;
+    padding: 65px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product__discription-title {
+    text-transform: uppercase;
+    color: $pink-price;
+    @include font(14px, 16px, 300);
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.product__discription-tittle-br {
+    width: 63px;
+    height: 3px;
+    background-color: #EF5B70;
+    margin-bottom: 12px;
+}
+
+.product__discription-subtitle {
+    text-transform: uppercase;
+    color: #4D4D4D;
+    @include font(18px, 21px, 300);
+    margin-bottom: 48px;
+}
+
+.product__discription-text {
+    color: #5E5E5E;
+    @include font(14px, 16px, 300);
+    text-align: center;
+    width: 48%;
+    margin-bottom: 32px;
+}
+
+.product__discription-price {
+    color: #EF5B70;
+    @include font(24px, 28px, 300);
+    margin-bottom: 126px;
+}
+
+.product__discription-price-br {
+    width: 56%;
+    height: 1px;
+    background-color: #EAEAEA;
+    margin-bottom: 65px;
+}
+
+.product__discription-btn {
+    padding: 14px 56px 14px 72px;
+    @include font(16px, 19px, 400);
+    color: #F26376;
+    background: none;
+    border: 1px solid #FF6A6A;
+    position: relative;
+}
+
+.product__discription-btn:before { /* корзинка к кнопке */
+    content: '';
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 10px;
+    left: 24px;
+    background-image: url(../../img/product-discription-btn-basket.svg);
+}
+
+.product__discription-btn:hover, .product__discription-btn:focus {
+    background-color: #E05C6E;
+    color: #FFFFFF;
+    transition: 0.8s;
+}
+
+.product__discription-btn:active {
+    background-color: #E29595;
+}
+
+.product__discription-preference {
+    display: flex;
+    margin-bottom: 49px;
+}
+
+.product__discription-dropdown:not(:last-child) {
+    margin-right: 10px;
+}
+
+.product__discription-dropdown-btn {
+    text-transform: uppercase;
+    @include font(14px, 17px);
+    color: #6F6E6E;
+}
