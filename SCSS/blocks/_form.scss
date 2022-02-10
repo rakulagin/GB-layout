@@ -1,5 +1,18 @@
 .form__legend {
     @include font(16px, 19px, 300);
+    color: #222222;
+}
+
+.form__legend-wrp {
+    width: 100%;
+
+    @include tablet {
+        width: 49%;
+    }
+
+    @include mobile {
+        width: 100%;
+    }
 }
 
 .form__input {
